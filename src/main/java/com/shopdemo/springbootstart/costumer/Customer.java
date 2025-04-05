@@ -2,10 +2,15 @@ package com.shopdemo.springbootstart.costumer;
 
 import java.sql.Date;
 
-public class Costumer {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Customer {
 	
 	
 	//fields
+	@Id
 	private String customerId;
 	private String firstName;
 	private String lastName;
@@ -16,7 +21,7 @@ public class Costumer {
 	
 	
 	//Constructor
-	public Costumer(String customerId, String firstName, String lastName, int bonusPoints, Date dateOfBirth) {
+	public Customer(String customerId, String firstName, String lastName, int bonusPoints, Date dateOfBirth) {
 		super();
 		this.customerId = customerId;
 		this.firstName = firstName;
@@ -25,7 +30,7 @@ public class Costumer {
 		this.dateOfBirth = dateOfBirth;
 	}
 	
-	public Costumer() {
+	public Customer() {
 	}
 	
 	
