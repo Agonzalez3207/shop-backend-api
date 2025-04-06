@@ -15,7 +15,7 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private int bonusPoints;
-	private Date dateOfBirth;
+	//private Date dateOfBirth;
 	
 	
 	
@@ -27,7 +27,7 @@ public class Customer {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.bonusPoints = bonusPoints;
-		this.dateOfBirth = dateOfBirth;
+		//this.dateOfBirth = dateOfBirth;
 	}
 	
 	public Customer() {
@@ -59,12 +59,12 @@ public class Customer {
 	public void setBonusPoints(int bonusPoints) {
 		this.bonusPoints = bonusPoints;
 	}
-	public Date getDateOfBirth() {
-		return dateOfBirth;
-	}
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
+	//public Date getDateOfBirth() {
+	//	return dateOfBirth;
+	//}
+	//public void setDateOfBirth(Date dateOfBirth) {
+	//	this.dateOfBirth = dateOfBirth;
+	//}
 	
 	
 	

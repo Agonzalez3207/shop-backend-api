@@ -1,6 +1,7 @@
 package com.shopdemo.springbootstart.costumer;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,12 +25,11 @@ public class CustomerController {
 	@PostMapping("/customer")
 	public void addCostumer(@RequestBody Customer costumer) {
 		customerService.addCustomer(costumer);
-		
 	}
 	
 	@GetMapping("/customer/{customerId}")
-	public void getCustomerById(@PathVariable String customerId) {
-		customerService.getCustomerInfo(customerId);
+	public Optional<Customer> getCustomerById(@PathVariable String customerId) {
+		return customerService.getCustomerInfo(customerId);
 	}
 	
 	@PutMapping("/customer")
